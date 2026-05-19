@@ -14,7 +14,7 @@ El modelo fue construido como un **modelo financiero integrado de tres estados**
 
 ## 🗂️ Estructura del Modelo
 
-El libro de Excel está organizado en **10 pestañas** distribuidas de manera lógica y secuencial:
+El libro de Excel está organizado en **11 pestañas** distribuidas de manera lógica y secuencial:
 
 | # | Pestaña | Descripción |
 | :-: | :--- | :--- |
