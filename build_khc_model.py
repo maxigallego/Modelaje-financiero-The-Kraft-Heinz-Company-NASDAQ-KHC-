@@ -5,9 +5,7 @@
 ------------------------------------------------------------------------
   Fuente unica de cifras historicas: 10-K FY2025 (fiscal year ended
   December 27, 2025), presentado por The Kraft Heinz Company ante la SEC.
-
-  Salida: KHC_Financial_Model.xlsx
-  Requiere: openpyxl  (pip install openpyxl)
+  
 ========================================================================
 """
 
@@ -17,7 +15,7 @@ from openpyxl.utils import get_column_letter
 from openpyxl.comments import Comment
 
 # ============================================================
-# 1) CONSTANTES DE FORMATO (segun consigna)
+# 1) CONSTANTES DE FORMATO
 # ============================================================
 FONT_NAME       = "Arial"
 FONT_SIZE       = 8
@@ -431,7 +429,7 @@ def build_assumptions(wb):
     set_label(ws, ASM["dio"], "DIO - Days Inventory Outstanding")
     set_label(ws, ASM["dpo"], "DPO - Days Payable Outstanding")
 
-    # Historicos (solo 24 y 25, en BS hay 2 anios) - traemos desde NWC
+    # Historicos (solo 24 y 25, en BS hay 2 años) - traemos desde NWC
     for i in range(1, N_HIST):  # FY24 y FY25
         c = HIST_COLS[i]
         set_cell(ws, f"{c}{ASM['dso']}", f"=NWC!{c}11", kind="link", fmt=DAYS_FMT)
