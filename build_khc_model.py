@@ -1,7 +1,7 @@
 """
 ========================================================================
   KRAFT HEINZ (NASDAQ: KHC) - MODELO FINANCIERO PROYECTADO 5 AÑOS
-  Prueba Técnica - NoNighter LLC  |  Posicion: Modelador Financiero
+  Modelo integrado de tres estados  |  FY2026E - FY2030E
 ------------------------------------------------------------------------
   Fuente unica de cifras historicas: 10-K FY2025 (fiscal year ended
   December 27, 2025), presentado por The Kraft Heinz Company ante la SEC.
@@ -255,7 +255,7 @@ def build_cover(wb):
     set_cell(ws, "B3", "Modelo Financiero Proyectado - 5 anios forward", bold=True)
     ws["B3"].font = Font(name=FONT_NAME, size=12, italic=True, color="404040")
 
-    set_cell(ws, "B5", "Prueba Tecnica  |  NoNighter LLC  |  Posicion: Modelador Financiero", bold=True)
+    set_cell(ws, "B5", "Modelo integrado de tres estados  |  FY2026E - FY2030E", bold=True)
 
     set_cell(ws, "B7",  "Fuente unica historica:",  bold=True)
     set_cell(ws, "C7",  "10-K FY2025 (fiscal year ended December 27, 2025) - SEC filing")

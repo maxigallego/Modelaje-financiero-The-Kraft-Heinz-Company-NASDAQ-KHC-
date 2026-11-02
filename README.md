@@ -66,6 +66,19 @@ El libro de Excel está organizado en **11 pestañas** distribuidas de manera l�
 
 ---
 
+## ▶️ Cómo regenerar el modelo
+
+El libro de Excel (`KHC_Financial_Model.xlsx`) se genera con `build_khc_model.py` (Python + `openpyxl`); las fórmulas quedan vivas en el archivo.
+
+```bash
+pip install -r requirements.txt
+python build_khc_model.py   # escribe KHC_Financial_Model.xlsx
+```
+
+## 📄 Licencia
+
+Código: [MIT](LICENSE). Las cifras históricas provienen del 10-K público de The Kraft Heinz Company.
+
 ## ✉️ Contacto
 
 Ante cualquier consulta sobre el modelo, la mecánica de las pestañas o los supuestos adoptados, quedo a entera disposición.
